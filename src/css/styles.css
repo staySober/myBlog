@@ -1,0 +1,21 @@
+/*
+
+ .header {
+    background-color: rgb(31, 30, 30);
+    height: 10em;
+    width: 100%;
+    color: azure;
+    text-align: center;
+    overflow:hidden;    
+    line-height: 10em; /*设置line-height与父级元素的height相等
+}
+*/
+
+.ant-layout-sider {
+    background-color: #ffffff;
+}
+
+
+.ant-layout-header {
+    background-color: #ffffff;
+}
