@@ -6,10 +6,10 @@ class Home extends Component {
         return(
             <center>
                  <Carousel autoplay>
-                    <div><h3>1</h3></div>
-                    <div><h3>2</h3></div>
-                    <div><h3>3</h3></div>
-                    <div><h3>4</h3></div>
+                    <div><img src={require('../assets/gt3RS.jpg')} className="flashImg"></img></div>
+                    <div><img src={require('../assets/R32.jpg')} className="flashImg"></img></div>
+                    <div><img src={require('../assets/R34.jpg')} className="flashImg"></img></div>
+                    <div><img src={require('../assets/gt3RS.jpg')} className="flashImg"></img></div>
                 </Carousel>
             </center>
         );

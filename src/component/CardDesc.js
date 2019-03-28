@@ -8,7 +8,7 @@ class CardDesc extends Component {
             <div>
                 <Card
                     hoverable
-                    style={{ width: 200 }}
+                    style={{ width: 200, marginTop:39}}
                     cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
                 >
                     <Meta

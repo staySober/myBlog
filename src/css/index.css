@@ -7,6 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   Font-size:62.5%;
+  height: 800px;
+  position: relative;
+  min-height: 100%;
 }
 
 code {

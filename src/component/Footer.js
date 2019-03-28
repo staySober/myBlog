@@ -7,7 +7,7 @@ class Footer extends Component {
         const Step = Steps.Step;
         return (
             <div>
-                <Divider>我是有下限的...</Divider>
+                <Divider>footer</Divider>
                 <Steps progressDot current={1}>
                     <Step title="贫穷" />
                     <Step title="搬砖" />

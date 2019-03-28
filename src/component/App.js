@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/App.css';
 import HeaderComponent from './Header';
 import SiderComponent from './Side';
-import { Layout, Statistic, Row, Col, Icon} from 'antd';
+import { Layout,} from 'antd';
 import {Route, Switch, Redirect} from 'react-router-dom';
 import Home from './Home';
 import Gallery from './Gallery';
@@ -18,11 +18,7 @@ class App extends Component {
       
       <Layout className='autoHeight'>
         <Sider>
-          <Row gutter={16}>
-            <Col span={12}>
-              <Statistic title="Feedback" value={1128} prefix={<Icon type="like" />} />
-            </Col>
-          </Row>
+         <center><h3>Speeder</h3></center>
           <CardDesc></CardDesc>
           <SiderComponent/>
         </Sider>
