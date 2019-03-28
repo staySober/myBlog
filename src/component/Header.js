@@ -1,26 +1,30 @@
 
 import React, {Component} from 'react';
 import '../css/styles.css';
-
-import { Menu } from 'antd';
-const {SubMenu} = Menu;
-
+import { Menu, Avatar } from 'antd';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
-    
     render() {
+        const {pathname} = window.location;
+    
         return(
-          
+            <div>
                 <Menu
                     theme="light"
                     mode="horizontal"
-                    defaultSelectedKeys={['2']}
-                    style={{ lineHeight: '64px' }}
+                    defaultSelectedKeys={[pathname]}
+                    style={{ lineHeight: '60px' }}
                 >
-                    <Menu.Item key="1">主页</Menu.Item>
-                    <Menu.Item key="2">笔记</Menu.Item>
-                    <Menu.Item key="3">相册</Menu.Item>
+                    <Menu.Item key="/"><Link exact='true' to='/'>主页</Link></Menu.Item>
+                    <Menu.Item key="/note"><Link exact='true' to='/note'>笔记</Link></Menu.Item>
+                    <Menu.Item key="/gallery"><Link exact='true' to='/gallery'>相册</Link></Menu.Item>
                 </Menu>
+                <Avatar className='iconUser'style={{ backgroundColor: '#e88f9d', verticalAlign: 'large' }} size="large" shape='square' 
+                            src={require('../assets/icon2.jpg')}>
+                    Sober
+                </Avatar>
+                </div>
             
         );
     }
