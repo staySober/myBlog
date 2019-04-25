@@ -1,21 +1,27 @@
-import React, { Component,Fragment } from 'react';
+import React, { Component } from 'react';
 import  {post} from '../req/http';
 
 class Note extends Component {
+    
     constructor(props) {
         super(props);
-        this.state ={data: '123'};
+        this.state ={apiRes: Object};
     }
 
     componentDidMount(){
-        this.setState({data: post('/version/getVersion','').data});
-        var current = post('/version/getVersion','');
-        console.log(current);
+        post('/version/getVersion','')
+            .then((res)=> this.setState({apiRes:res}));
+        console.log(this.state.apiRes);
     }
+
 
     render() {
         return(
-            <Fragment>{this.state.data}</Fragment>
+            <div>
+                <h2>
+                    apiRes: {this.state.apiRes.data}
+                </h2>
+            </div>
         );
     }
 }

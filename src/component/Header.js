@@ -16,9 +16,9 @@ class Header extends Component {
                     defaultSelectedKeys={[pathname]}
                     style={{ lineHeight: '60px' }}
                 >
-                    <Menu.Item key="/"><Link exact='true' to='/'>主页</Link></Menu.Item>
-                    <Menu.Item key="/note"><Link exact='true' to='/note'>公司介绍</Link></Menu.Item>
-                    <Menu.Item key="/gallery"><Link exact='true' to='/gallery'>联系我们</Link></Menu.Item>
+                    <Menu.Item key="/"><Link exact='true' to='/'>Home</Link></Menu.Item>
+                    <Menu.Item key="/note"><Link exact='true' to='/note'>Note</Link></Menu.Item>
+                    <Menu.Item key="/gallery"><Link exact='true' to='/gallery'>Gallery</Link></Menu.Item>
                 </Menu>
                 <Avatar className='iconUser'style={{ backgroundColor: '#e88f9d', verticalAlign: 'large' }} size="large" shape='square' 
                             src={require('../assets/icon2.jpg')}>

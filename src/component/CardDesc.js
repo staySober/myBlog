@@ -12,8 +12,8 @@ class CardDesc extends Component {
                     cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
                 >
                     <Meta
-                        title="TSON高性能排气"
-                        description="www.tsonracing.com   tel: 1560122112"
+                        title="blog"
+                        description="www.waitSober.com   weibo: staySober丶"
                     />
                 </Card>
             </div>
