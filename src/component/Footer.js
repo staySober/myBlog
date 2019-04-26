@@ -8,11 +8,11 @@ class Footer extends Component {
         return (
             <div>
                 <Divider>footer</Divider>
-                <Steps progressDot current={1}>
+                {/* <Steps progressDot current={1}>
                     <Step title="贫穷" />
                     <Step title="搬砖" />
                     <Step title="暴富" />
-                </Steps>
+                </Steps> */}
             </div>
         );
     }
