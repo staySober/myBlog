@@ -7,6 +7,8 @@ import {Route, Switch, Redirect} from 'react-router-dom';
 import Home from './Home';
 import Gallery from './Gallery';
 import Note from './Note';
+import Blog from './Blog';
+
 import FooterComponent from './Footer';
 import CardDesc from './CardDesc';
 
@@ -34,6 +36,7 @@ class App extends Component {
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/note' component={Note}/>
                 <Route exact path='/gallery' component={Gallery}/>
+                <Route exact path='/blog/:id' component={Blog}/>
                 <Redirect to="/" />
               </Switch>
             </main>

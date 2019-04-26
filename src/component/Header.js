@@ -22,7 +22,7 @@ class Header extends Component {
                 </Menu>
                 <Avatar className='iconUser'style={{ backgroundColor: '#e88f9d', verticalAlign: 'large' }} size="large" shape='square' 
                             src={require('../assets/icon2.jpg')}>
-                    Sober
+                   
                 </Avatar>
                 </div>
             

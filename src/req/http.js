@@ -50,18 +50,6 @@ export function get(url, params) {
 
 
 export function post(url, data) {
-    // return new Promise((resolve, reject) => {
-    //     axios.post(url, qs.stringify(data))
-    //     .then(res => {
-    //         console.log(res.data);
-    //         resolve(res.data)
-    //         return res;
-    //     }).catch(err => {
-    //         console.log(err);
-    //         resolve(err)
-    //     })
-    // })
-
     return new Promise((resolve,reject) => {
         axios.post(url,data)
              .then(response => {
